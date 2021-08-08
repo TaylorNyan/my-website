@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>Sub of the Month</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+  
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif;
+    }
+    .w3-bar,
+    h1,
+    button {
+      font-family: "Montserrat", sans-serif;
+    }
+    .fa-anchor,
+    .fa-coffee {
+      font-size: 200px;
+    }
+
+    .header {
+      padding-right: 200px;
+  padding-bottom: 15px;
+  padding-left: 200px;
+  padding-top: 15px;
+      background-color: #173380;
+      width: 100%;
+      
+    }
+
+    .main {
+      background-color: white;
+      padding-right: 200px;
+      padding-bottom: 15px;
+      padding-left: 200px;
+      padding-top: 15px;
+      text-align: center;
+    }
+
+    .button {
+      float: right;
+      background-color: black;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 20px;
+      margin: 4px 2px;
+      cursor: pointer;
+      opacity: 1;
+      transition: 0.3s;
+    }
+    .button:hover {
+      opacity: 0.6;
+    }
+
+    .head {
+     background-color:rgb(235, 223, 223);
+    }
+
+  .h1 {
+    font-size: 40px;
+    font-family: 'Nothing You Could Do', cursive;
+    text-align: center;
+  
+}
+
+.p1{
+  font-size: 30px;
+  text-align: center;
+}
+
+.subfam {
+  background-color: #173380; 
+  padding:5px;
+}
+
+.divider {
+  padding-right: 200px;
+  padding-bottom: 5px;
+  padding-left: 200px;
+  padding-top: 5px;
+      background-color: #173380;
+      width: 100%;
+}
+
+footer {
+      padding: 100px;
+    }
+
+    * {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+  </style>
+  <body class="bg-pink-200">
+   
+    <!-- Navbar -->
+   <div class="w3-top">
+    <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+      <a
+        class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+        href="javascript:void(0);"
+        onclick="myFunction()"
+        title="Toggle Navigation Menu"
+        ><i class="fa fa-bars"></i
+      ></a>
+      <a
+        href="index.html"
+        class="w3-bar-item w3-button w3-padding-large w3-white w3-hover-pale-red"
+        >Home</a
+      >
+     
+
+      <a
+      href="blog.html"
+      class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
+      >Blogs</a
+    >
+
+    <a
+    href="food.html"
+    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
+    >Food Blog</a
+  >
+
+      <a
+        href="twitch.html"
+        class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
+        >Twitch</a
+      >
+
+      <a
+        href="mental-health-resources.html"
+        class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
+        >Mental Health Resources</a
+      >
+    </div>
+
+      <!-- Navbar on small screens -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large"
+      >
+      <a
+      href="food.html"
+      class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
+      >Food Nyan</a
+    >
+        <a href="SubMonth.html" class="w3-bar-item w3-button w3-padding-large"
+          >Sub of the Month</a
+        >
+
+        <a
+          href="twitch-live.html"
+          class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
+          >Twitch Live</a
+        >
+
+        <a
+          href="mental-health-resources.html"
+          class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
+          >Mental Health Resources</a
+        >
+      </div>
+    </div>
+
+     <!-- Header -->
+
+     <header style="padding: 128px 16px;" class="head">
+      <h1 class="h1">TaylorNyann</h1>
+      <p class="p1">Welcome to the Step-Fam chat</p>
+    </header>
+
+    <!----DONATE---------->
+
+    <div class="header">
+      <p style="display: inline-block; color: white; font-family: 'Nothing You Could Do', cursive;">
+        If you would like to support my channel please consider donating to my
+        stream. Thank you from the bottom of my heart!
+      
+      <div style="float: right;display: inline-block; font-family: 'Nothing You Could Do', cursive;">
+        <a
+          class="button button:hover"
+          href="https://streamlabs.com/taylornyann/tip"
+          >Donate here</a
+        >
+      </p>
+    </div>
+  </div>
+
+              <!--------TWTICH--------->
+    <div class="main" >
+      <!-- Add a placeholder for the Twitch embed -->
+      <div id="twitch-embed"></div>
+
+      <!-- Load the Twitch embed script -->
+      <script src="https://player.twitch.tv/js/embed/v1.js"></script>
+
+      <!-- Create a Twitch.Player object. This will render within the placeholder div -->
+      <script type="text/javascript">
+        new Twitch.Player("twitch-embed", {
+          width: 1500,
+          height: 750,
+          channel: "taylornyann"
+        });
+      </script>
+
+      <div style="padding: 16px; color: white;"></div>
+
+      <iframe
+        id="chat_embed"
+        src="https://www.twitch.tv/embed/taylornyann/chat?parent=https://www.taylornyan.com/twitch-live.html"
+        height="500"
+        width="350"
+      >
+      </iframe>
+    </div>
+  
+
+    <div class="divider">
+    </div>
+   
+              <!----------SUBSCRIBER------------>
+
+  <div style= "padding-right: 200px;
+  padding-bottom: 15px;
+  padding-left: 200px;
+  padding-top: 15px;">
+    <h1 style="font-family: 'Nothing You Could Do', cursive;">
+      The Subscriber family
+    </h1>
+    
+    <div class="row">
+        <div class="column">
+        <img src= "submonth.png" alt="Sub" style="width:100px;height:100px;margin: 10px 5px"> </img>
+        <p style=" font-size: 20px;"> HunniiMochii </p>
+          </div>
+        </div>
+
+    </div>
+   
+    
+    
+
+                <!-- Footer -->
+    
+   <footer>
+          <div style="text-align: center">
+            <a
+              href="https://www.instagram.com/taylornyann/"
+              class="text-lg hover:underline"
+              ><img
+                class="inline-block"
+                width="40"
+                width="40"
+                src="logo-instagram.svg"
+            /></a>
+            <a
+              href="https://www.twitch.tv/taylornyann"
+              class="text-lg hover:underline"
+              ><img
+                class="inline-block"
+                width="40"
+                width="40"
+                src="logo-twitch.svg"
+            /></a>
+            <a href="https://discord.gg/KPby77Y" class="text-lg hover:underline"
+              ><img
+                class="inline-block"
+                width="40"
+                width="40"
+                src="logo-discord.svg"
+            /></a>
+          </div>
+        </footer>
+    
+  </body>
+</html>

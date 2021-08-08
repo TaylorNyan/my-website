@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title>TaylorNyan</title>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Montserrat"
+  />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+
+  <style>
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      font-family: "Lato", sans-serif;
+    }
+    .w3-bar,
+    h1,
+    button {
+      font-family: "Montserrat", sans-serif;
+    }
+    .fa-anchor,
+    .fa-coffee {
+      font-size: 200px;
+    }
+
+    h1 {
+      color: black;
+    }
+
+    .container {
+      position: relative;
+      width: 100%;
+    }
+
+    .image {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      transition: 0.5s ease;
+      background-color: #a7a7a7;
+    }
+
+    .container:hover .overlay {
+      opacity: 1;
+    }
+
+    .text {
+      color: white;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    div.links{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-right: 250px;
+  margin-left: 250px;
+
+}
+
+.head {
+     background-color:rgb(235, 223, 223);
+    }
+
+    .h1 {
+    font-size: 40px;
+    font-family: 'Nothing You Could Do', cursive;
+    text-align: center;
+}
+
+.p1{
+  font-size: 20px;
+  text-align: center;
+}
+
+
+footer {
+      padding: 100px;
+      text-align: center;
+    }
+
+    .divider {
+  padding-right: 200px;
+  padding-bottom: 2px;
+  padding-left: 200px;
+  padding-top: 2px;
+      background-color: #173380;
+      width: 100%;}
+
+
+  </style>
+
+   <body class="bg-pink-200">
+    
+      <!-- Navbar -->
+      <div class="w3-top">
+        <div class="w3-bar w3-white w3-card w3-left-align w3-large">
+          <a
+            class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
+            href="javascript:void(0);"
+            onclick="myFunction()"
+            title="Toggle Navigation Menu"
+            ><i class="fa fa-bars"></i
+          ></a>
+          <a
+            href="index.html"
+            class="w3-bar-item w3-button w3-padding-large w3-white w3-hover-pale-red"
+            >Home</a
+          >
+         
+  
+          <a
+          href="blog.html"
+          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
+          >Blogs</a
+        >
+  
+        <a
+        href="food.html"
+        class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
+        >Food Blog</a
+      >
+  
+          <a
+            href="twitch.html"
+            class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
+            >Twitch</a
+          >
+  
+          <a
+            href="mental-health-resources.html"
+            class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
+            >Mental Health Resources</a
+          >
+        </div>
+
+      <!-- Navbar on small screens -->
+      <div
+        id="navDemo"
+        class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large"
+      >
+        <a
+          href="Amazon.Affilate.html"
+          class="w3-bar-item w3-button w3-padding-large"
+          >Amazon Shop</a
+        >
+        <a href="SubMonth.html" class="w3-bar-item w3-button w3-padding-large"
+          >Sub of the Month</a
+        >
+        <a
+          href="twitch-live.html"
+          class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
+          >Twitch Live</a
+        >
+        <a
+          href="mental-health-resources.html"
+          class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
+          >Mental Health Resources</a
+        >
+      </div>
+    </div>
+
+    <header style="padding: 128px 16px;" class="head">
+        <h1 class="h1">Mental Health Resources</h1>
+        <p class="p1">Thank you to everyone that helped me add information to this page!</p>
+      </header>
+    
+    <!--------------Resources per location---------------->
+    
+        <div class="divider">
+        </div>
+      
+
+    <div>
+      <header>
+        <h3 style="font-family: 'Nothing You Could Do', cursive;font-size: 25px; padding-right: 200px;
+        padding-left: 200px;">
+          Resources per location
+        </h3>
+      </header>
+
+      <div style="padding: 20px;">
+          <div class="divider">
+          </div>
+        </div>
+
+      <div class="w3-row-padding w3-padding-16 w3-center">
+        <div class="w3-quarter">
+          <a
+            href="mental-health-resources-us.html"
+            class="w3-bar-item w3-button w3-padding-large"
+          >
+            <img src="US.jpg" alt="United States" style="width: 50%;" />
+            <h1>U.S.</h1>
+          </a>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="container">
+            <a
+              href="mental-health-resources-aus.html"
+              class="w3-bar-item w3-button w3-padding-large"
+            >
+              <img src="aus.png" alt="Australia" style="width: 50%;" />
+              <h1>Australia</h1>
+            </a>
+            <div class="overlay">
+              <div class="text">Coming Soon</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="w3-quarter">
+          <div class="container">
+            <a
+              href="mental-health-resources-ca.html"
+              class="w3-bar-item w3-button w3-padding-large"
+            >
+              <img src="canada.svg" alt="Canada" style="width: 50%;" />
+              <h1>Canada</h1>
+            </a>
+            <div class="overlay">
+              <div class="text">Coming Soon</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--------------Mental Health Resources»»---------------->
+      <div style="padding: 20px;">
+          <div class="divider">
+          </div>
+        </div>
+
+      <div>
+        <header>
+          <h3 style="font-family: 'Nothing You Could Do', cursive;font-size: 25px; padding-right: 200px;
+          padding-left: 200px;">
+            Mental Health Awareness Resources
+          </h3>
+        </header>
+      </div>
+
+      <div style="padding: 20px;">
+          <div class="divider">
+          </div>
+        </div>
+
+     <div class="links">
+        
+        <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white">
+            <img src="amhc-logo-02@10x.png" alt="AMHC" style="width: 10%;" />
+            <div class="w3-container">
+              <h3><b>Asian Mental Health Collective</b></h3>
+              <h5>
+                AMHC, <span class="w3-opacity">5/31/2021 (Last Updated)</span>
+              </h5>
+            </div>
+  
+            <div class="w3-container">
+              <p>
+                Mental Health Resource directed towards the asian community to
+                encourage discussing and seeking help for mental health. Other
+                gloabal resources are provided under their
+                'Resources'->'Organizations'. If you are interested check them
+                out!
+              </p>
+              <div class="w3-row">
+                <div class="w3-col m8 s12">
+                  <p>
+                    <a href="https://www.asianmhc.org/" class="button">
+                      READ ME»</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Blog entry -->
+        <div class="w3-card-4 w3-margin w3-white">
+            <img src="MHJournal.jpg" alt="AMHC" style="width: 10%;" />
+            <div class="w3-container">
+              <h3><b>Journal of Mental Health and Clinical Psychology </b></h3>
+              <h5>
+                MentalHealthJournal, <span class="w3-opacity">5/31/2021 (Last Updated)</span>
+              </h5>
+            </div>
+  
+            <div class="w3-container">
+              <p>
+               Studies related to psychology that are peer reviewed and recent. 
+               Great reads for those intrested in scientific articles and most recent studies for psychology topics!
+              </p>
+              <div class="w3-row">
+                <div class="w3-col m8 s12">
+                  <p>
+                    <a href="https://www.mentalhealthjournal.org/" class="button">
+                      READ ME»</a
+                    >
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+    
+
+     <!-- Footer -->
+
+    
+     <footer>
+       
+        <div style="text-align: center">
+          <a
+            href="https://www.instagram.com/taylornyann/"
+            class="text-lg hover:underline"
+            ><img
+              class="inline-block"
+              width="40"
+              width="40"
+              src="logo-instagram.svg"
+          /></a>
+          <a
+            href="https://www.twitch.tv/taylornyann"
+            class="text-lg hover:underline"
+            ><img
+              class="inline-block"
+              width="40"
+              width="40"
+              src="logo-twitch.svg"
+          /></a>
+          <a href="https://discord.gg/KPby77Y" class="text-lg hover:underline"
+            ><img
+              class="inline-block"
+              width="40"
+              width="40"
+              src="logo-discord.svg"
+          /></a>
+        </div>
+      </footer>
+
+  </body>
+</html>
