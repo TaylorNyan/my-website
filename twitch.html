@@ -18,35 +18,26 @@
   <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
   
   <style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Lato", sans-serif;
-    }
-    .w3-bar,
-    h1,
-    button {
-      font-family: "Montserrat", sans-serif;
-    }
-    .fa-anchor,
-    .fa-coffee {
-      font-size: 200px;
-    }
-
     .header {
       padding-right: 200px;
-  padding-bottom: 15px;
-  padding-left: 200px;
-  padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 200px;
+      padding-top: 15px;
       background-color: #173380;
       width: 100%;
       
     }
 
+    .top-social {
+    text-align: center;
+    position: absolute;
+    padding-bottom: 100px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    margin: 0;
+  }
     .main {
       background-color: white;
       padding-right: 200px;
@@ -75,19 +66,31 @@
 
     .head {
      background-color:rgb(235, 223, 223);
+     position: relative;
+     text-align: center;
     }
 
-  .h1 {
-    font-size: 40px;
+    .h1 {
+    font-size: 60px;
     font-family: 'Nothing You Could Do', cursive;
     text-align: center;
-  
-}
+    position: absolute;
+    padding-bottom: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    margin: 0;
+  }
 
-.p1{
+  .p1 {
   font-size: 30px;
   text-align: center;
-}
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  }
 
 .subfam {
   background-color: #173380; 
@@ -124,85 +127,151 @@ footer {
   display: table;
 }
 
+.topnav {
+    overflow: hidden;
+    background-color: white;
+    display: inline-block;
+  }
+
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .topnav a.active {
+    background-color: white;
+    color: black;
+  }
+
+  .topnav a:hover {
+    background-color: rgba(193, 66, 66, 0.7);
+    color: black;
+  }
+
+  .dropdown {
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: rgba(193, 66, 66, 0.7);
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: rgba(193, 66, 66, 0.432);
+  }
+
+  .dropdown:hover .dropdown-content {
+    font-size: 16px;
+    display: block;
+  }
+
   </style>
   <body class="bg-pink-200">
    
-    <!-- Navbar -->
-   <div class="w3-top">
-    <div class="w3-bar w3-white w3-card w3-left-align w3-large">
-      <a
-        class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
-        href="javascript:void(0);"
-        onclick="myFunction()"
-        title="Toggle Navigation Menu"
-        ><i class="fa fa-bars"></i
-      ></a>
-      <a
-        href="index.html"
-        class="w3-bar-item w3-button w3-padding-large w3-white w3-hover-pale-red"
-        >Home</a
-      >
-     
-
-      <a
-      href="blog.html"
-      class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
-      >Blogs</a
-    >
-
-    <a
-    href="food.html"
-    class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
-    >Food Blog</a
-  >
-
-      <a
-        href="twitch.html"
-        class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
-        >Twitch</a
-      >
-
-      <a
-        href="mental-health-resources.html"
-        class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
-        >Mental Health Resources</a
-      >
+     <!-- Navbar -->
+  <div id="navbar" style="font-size: 0;">
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
     </div>
 
-      <!-- Navbar on small screens -->
-      <div
-        id="navDemo"
-        class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large"
-      >
-      <a
-      href="food.html"
-      class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
-      >Food Nyan</a
-    >
-        <a href="SubMonth.html" class="w3-bar-item w3-button w3-padding-large"
-          >Sub of the Month</a
-        >
 
-        <a
-          href="twitch-live.html"
-          class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
-          >Twitch Live</a
-        >
-
-        <a
-          href="mental-health-resources.html"
-          class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
-          >Mental Health Resources</a
-        >
+    <div class="dropdown">
+      <button class="dropbtn">Blogs
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="blog.html">Blogs</a>
+        <a href="authors.html">Authors</a>
       </div>
     </div>
 
-     <!-- Header -->
+    <div class="topnav">
+      <a class="active" href="food.html">Food Blog</a>
+    </div>
 
-     <header style="padding: 128px 16px;" class="head">
-      <h1 class="h1">TaylorNyann</h1>
-      <p class="p1">Welcome to the Step-Fam chat</p>
-    </header>
+    <div class="topnav">
+      <a class="active" href="twitch.html">Twitch</a>
+    </div>
+
+    <div class="topnav">
+      <a class="active" href="mental-health-resources.html">Mental Health Resources</a>
+    </div>
+
+  </div>
+
+
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="Amazon.Affilate.html" class="w3-bar-item w3-button w3-padding-large">Amazon Shop</a>
+    <a href="SubMonth.html" class="w3-bar-item w3-button w3-padding-large">Sub of the Month</a>
+    <a href="twitch-live.html" class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red">Twitch
+      Live</a>
+    <a href="mental-health-resources.html"
+      class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red">Mental Health Resources</a>
+  </div>
+  
+
+  <!-- Header -->
+
+  <header class="head">
+    <img src="Header.png" alt="image" />
+    <h1 class="h1">TaylorNyann</h1>
+    <p class="p1">Welcome to my website!</p>
+    <div class="top-social">
+      <a href="https://www.instagram.com/taylornyann/" class="text-lg hover:underline"><img class="inline-block"
+          width="40" width="40" src="logo-instagram.svg" /></a>
+      <a href="https://www.twitch.tv/taylornyann" class="text-lg hover:underline"><img class="inline-block" width="40"
+          width="40" src="logo-twitch.svg" /></a>
+      <a href="https://discord.gg/KPby77Y" class="text-lg hover:underline"><img class="inline-block" width="40"
+          width="40" src="logo-discord.svg" /></a>
+    </div>
+  </header>
+
+
+  <!-------Socials--------->
+  <div class="header">
+    <p
+      style="color: white; font-family: 'Nothing You Could Do', cursive; font-size: 20px;text-align: center;">
+      Stay updated by following my socials!</p>
+
+
+  </div>
 
     <!----DONATE---------->
 
@@ -211,7 +280,7 @@ footer {
         If you would like to support my channel please consider donating to my
         stream. Thank you from the bottom of my heart!
       
-      <div style="float: right;display: inline-block; font-family: 'Nothing You Could Do', cursive;">
+      <div style="float: right; display: inline-block; font-family: 'Nothing You Could Do', cursive;">
         <a
           class="button button:hover"
           href="https://streamlabs.com/taylornyann/tip"
@@ -238,17 +307,7 @@ footer {
         });
       </script>
 
-      <div style="padding: 16px; color: white;"></div>
-
-      <iframe
-        id="chat_embed"
-        src="https://www.twitch.tv/embed/taylornyann/chat?parent=https://www.taylornyan.com/twitch-live.html"
-        height="500"
-        width="350"
-      >
-      </iframe>
-    </div>
-  
+      
 
     <div class="divider">
     </div>
@@ -265,8 +324,17 @@ footer {
     
     <div class="row">
         <div class="column">
-        <img src= "submonth.png" alt="Sub" style="width:100px;height:100px;margin: 10px 5px"> </img>
-        <p style=" font-size: 20px;"> HunniiMochii </p>
+        <p style=" font-size: 20px;"> 
+          Tyromega
+          <br>
+          Ettieneludor
+          <br>
+          NLBash
+          <br>
+          Russku_Cruz
+          <br>
+          T10Nat
+        </p>
           </div>
         </div>
 
