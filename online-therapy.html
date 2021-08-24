@@ -1,140 +1,436 @@
 <!DOCTYPE html>
 <html lang="en">
-  <title>TaylorNyan</title>
+<title>TaylorNyan</title>
 
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
-  <link
-    rel="stylesheet"
-    href="https://fonts.googleapis.com/css?family=Montserrat"
-  />
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-  />
-  <style>
-    body,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      font-family: "Lato", sans-serif;
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+
+<style>
+  
+  /* Footer */
+  * {
+  box-sizing: border-box;
+  }
+
+  footer {
+    padding-top: 30px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(235, 223, 223, 0.507);
+  }
+
+  .footer-main {
+     display: flex;
+     vertical-align: top;
+     padding-right: 300px;
+     padding-bottom: 50px;
+     padding-left: 300px;
+  }
+
+  .footer1 {
+    flex: 50%;
+    text-align: center;
+    padding: 100px;
+    color: #173380;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .footer2 {
+    flex: 50%;
+    padding: 10px;
+  }
+
+  form {
+  border: 3px solid #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+  }
+
+ .container {
+  padding: 5px;
+  }
+
+  input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  }
+
+  input[type=submit] {
+  background-color: #173380;
+  color: white;
+  border: none;
+  }
+
+   input[type=submit]:hover {
+  opacity: 0.8;
+  }
+
+
+  * {
+  box-sizing: border-box;
+}
+
+  .content1 {
+  float: left;
+  width: 33.33%;
+  padding: 20px;
+  }
+  .content2  {
+  float: left;
+  width: 33.33%;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  }
+  .content3  {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  text-align: center;
+  }
+
+  .main:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+  .head {
+    background-color: rgb(235, 223, 223);
+    position: relative;
+    text-align: center;
+  }
+
+  .h1 {
+    font-size: 60px;
+    font-family: 'Nothing You Could Do', cursive;
+    text-align: center;
+    position: absolute;
+    padding-bottom: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    margin: 0;
+  }
+
+  .h2
+  {
+  font-family: 'Poppins', sans-serif;
+  font-weight:bold;
+  text-align:center;
+  font-size: 30px;
+  }
+
+  
+  .h3
+  {
+  font-family: 'Poppins', sans-serif;
+  text-align:center;
+  font-size: 20px;
+  }
+
+  .h4
+  {
+  font-family: 'Poppins', sans-serif;
+  font-weight:bold;
+  text-align:center;
+  font-size: 20px;
+  }
+
+  .top-social {
+    text-align: center;
+    position: absolute;
+    padding-bottom: 100px;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    margin: 0;
+  }
+
+  .p1 {
+    font-size: 30px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .p2 {
+    font-size:20px;
+    font-family: 'Poppins', sans-serif;
     }
-    .w3-bar,
-    h1,
-    button {
-      font-family: "Montserrat", sans-serif;
-    }
-    .fa-anchor,
-    .fa-coffee {
-      font-size: 200px;
+  
+    .p3 {
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
     }
 
-    a:hover.back,
-    a:active.back {
-      background-color: pink;
-      color: black;
-      margin: 60px;
-    }
+  .divider {
+    padding-right: 200px;
+    padding-bottom: 2px;
+    padding-left: 200px;
+    padding-top: 2px;
+    background-color: #173380;
+    width: 100%;
+  }
 
-    a:link.back,
-    a:visited.back {
-      background-color: white;
-      color: black;
-      border: 2px solid black;
-      padding: 10px 20px;
-      margin: 60px;
-      text-align: center;
-      text-decoration: none;
-      display: inline-block;
-    }
+  .button {
+    border-radius: 4px;
+    background-color: #173380;
+    font-family: 'Nothing You Could Do', cursive;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0;
+    float: right;
+  }
 
-    ul.a {
-      list-style-type: circle;
-    }
-  </style>
-  <body class="bg-pink-200">
-    <!-- Navbar -->
-    <div class="w3-top">
-      <div class="w3-bar w3-white w3-card w3-left-align w3-large">
-        <a
-          class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red"
-          href="javascript:void(0);"
-          onclick="myFunction()"
-          title="Toggle Navigation Menu"
-          ><i class="fa fa-bars"></i
-        ></a>
-        <a
-          href="index.html"
-          class="w3-bar-item w3-button w3-padding-large w3-white w3-hover-pale-red"
-          >Home</a
-        >
-        <a
-          href="food.html"
-          class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
-          >Food Nyan</a
-        >
-        <a
-          href="SubMonth.html"
-          class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
-          >Sub of the Month</a
-        >
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
 
-        <a
-          href="twitch-live.html"
-          class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
-          >Twitch Live</a
-        >
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
 
-        <a
-          href="mental-health-resources.html"
-          class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
-          >Mental Health Resources</a
-        >
-      </div>
+  .button:hover span {
+    padding-right: 25px;
+  }
 
-      <!-- Navbar on small screens -->
-      <div
-        id="navDemo"
-        class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large"
-      >
-        <a
-          href="Amazon.Affilate.html"
-          class="w3-bar-item w3-button w3-padding-large"
-          >Amazon Shop</a
-        >
-        <a href="SubMonth.html" class="w3-bar-item w3-button w3-padding-large"
-          >Sub of the Month</a
-        >
-        <a
-          href="twitch-live.html"
-          class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
-          >Twitch Live</a
-        >
-        <a
-          href="mental-health-resources.html"
-          class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red"
-          >Mental Health Resources</a
-        >
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  .header {
+    padding-right: 300px;
+    padding-bottom: 5px;
+    padding-left: 300px;
+    padding-top: 5px;
+    background-color: #173380;
+    width: 100%;
+
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: white;
+    display: inline-block;
+  }
+
+  .topnav a {
+    float: left;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 16px;
+  }
+
+  .topnav a.active {
+    background-color: white;
+    color: black;
+  }
+
+  .topnav a:hover {
+    background-color: rgba(193, 66, 66, 0.7);
+    color: black;
+  }
+
+  .dropdown {
+    overflow: hidden;
+    display: inline-block;
+  }
+
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: rgb(0, 0, 0);
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+
+  .navbar a:hover,
+  .dropdown:hover .dropbtn {
+    background-color: rgba(193, 66, 66, 0.7);
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: rgba(193, 66, 66, 0.432);
+  }
+
+  .dropdown:hover .dropdown-content {
+    font-size: 16px;
+    display: block;
+  }
+
+  .centerImage
+{
+ text-align:center;
+ display:block;
+}
+
+</style>
+
+<body class="bg-pink-200">
+
+  <!-- Navbar -->
+  <div id="navbar" style="font-size: 0;">
+    <div class="topnav">
+      <a class="active" href="index.html">Home</a>
+    </div>
+
+
+    <div class="dropdown">
+      <button class="dropbtn">Blogs
+        <i class="fa fa-caret-down"></i>
+      </button>
+      <div class="dropdown-content">
+        <a href="blog.html">Blogs</a>
+        <a href="authors.html">Authors</a>
       </div>
     </div>
 
-    <div class="">
-      <a class="back" href="mental-health-resources-us.html"> Back </a>
+    <div class="topnav">
+      <a class="active" href="food.html">Food Blog</a>
     </div>
+
+    <div class="topnav">
+      <a class="active" href="twitch.html">Twitch</a>
+    </div>
+
+    <div class="topnav">
+      <a class="active" href="mental-health-resources.html">Mental Health Resources</a>
+    </div>
+
+  </div>
+
+
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="Amazon.Affilate.html" class="w3-bar-item w3-button w3-padding-large">Amazon Shop</a>
+    <a href="SubMonth.html" class="w3-bar-item w3-button w3-padding-large">Sub of the Month</a>
+    <a href="twitch-live.html" class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red">Twitch
+      Live</a>
+    <a href="mental-health-resources.html"
+      class="w3 -bar-item w3-button w3-hide-small w3-padding-large w3-hover-pale-red">Mental Health Resources</a>
+  </div>
+  
+
+  <!-- Header -->
+
+  <header class="head">
+    <img src="Header.png" alt="image" />
+    <h1 class="h1">TaylorNyann</h1>
+    <p class="p1">Welcome to my website!</p>
+    <div class="top-social">
+      <a href="https://www.instagram.com/taylornyann/" class="text-lg hover:underline"><img class="inline-block"
+        width="40" width="40" src="logo-instagram.svg" /></a>
+      <a href="https://www.twitch.tv/taylornyann" class="text-lg hover:underline"><img class="inline-block" width="40"
+        width="40" src="logo-twitch.svg" /></a>
+      <a href="https://discord.gg/KPby77Y" class="text-lg hover:underline"><img class="inline-block" width="40"
+        width="40" src="logo-discord.svg" /></a>
+      <a href="https://twitter.com/TaylorNyann" class="text-lg hover:underline"><img class="inline-block" width="40"
+        width="40" src="logo-twitter.svg" /></a>
+      <a href="https://www.youtube.com/channel/UCcP05pAJZhrHwg_tzQcI1jQ" class="text-lg hover:underline"><img class="inline-block" width="40"
+        width="40" src="logo-youtube.svg" /></a>
+    </div>
+  </header>
+
+
+  <!-------Socials--------->
+  <div class="header">
+    <p
+      style="color: white; font-family: 'Nothing You Could Do', cursive; font-size: 20px;text-align: center;">
+      Stay updated by following my socials!</p>
+
+
+  </div>
+  
 
     <!-----------------------------Page start------------------------------------------->
 
-    <div class="w3-container" id="about">
-      <div class="w3-content" style="max-width: 700px;">
-        <h5 class="w3-center w3-padding-5">
-          <span class="w3-tag w3-wide">Is Online Therapy Right for You?</span>
-        </h5>
-        <p>
+     <!---------First Column----------->
+    <div class="main">
+      <div class=" content1">
+        <a href="mental-health-resources-us.html">
+          <button class="button" style="float:left;"><span>Back</span></button>
+          </a>
+      </div>
+
+
+     <!---------Second Column----------->
+
+      <div class="content2">
+        <h2 class="h2">
+          Is Online Therapy Right for You?
+        </h2>
+        <p2 class="p2">
           As the mental health community grows so has its ability to reach those
           that struggled to meet with therapists in their area. People that once
           struggled to book an appointment or had not considered in-person
@@ -147,28 +443,29 @@
           those with mental illnesses (Matas, 2018). As online therapy grows and
           becomes a more popular option for those seeking treatment is it for
           everyone?
-        </p>
+        </p2>
 
-        <h4 class="w3-center w3-padding-5">Studies</h4>
-        <p>
+        <h3 class="h3">Studies</h3>
+        <p2 class="p2">
           Multiple studies have shown no significant differences between online
           therapy versus face-to-face therapy (Wagner (2014), Andrews (2018),
           and Nordgren (2014)). There have even been studies conducted that
           provide significant evidence for online therapy being slightly more
           effective than face-to-face therapy for those who are specifically
           seeking Cognitive Behavioral Therapy (Sarkis (2020), Luo (2020)).
-        </p>
+        </p2>
 
-        <h4 class="w3-left-align w3-padding-5">PROS</h4>
-        <ul>
+        <h3 class="h3">PROS</h3>
+        <ul class="p2">
           <li>No commute</li>
           <li>Ability to more freely communicate</li>
           <li>More variety of therapist</li>
           <li>No waiting rooms for those with social anxiety</li>
           <li>No formal wear</li>
         </ul>
-        <h4 class="w3-left-align w3-padding-5">CONS</h4>
-        <ul>
+
+        <h3 class="h3">CONS</h3>
+        <ul class="p2">
           <li>Unable to be effective for certain conditions</li>
           <li>Technological issues</li>
           <li>
@@ -179,8 +476,8 @@
           <li>Difficulties intervening on a crisis</li>
         </ul>
 
-        <h4 class="w3-center w3-padding-5">Personal Experience</h4>
-        <p>
+        <h3 class="h3">Personal Experience</h3>
+        <p2 class="p2">
           Throughout my mental health journey I have been to both online and
           face-to-face therapy and prefer online therapy to face-to-face. I am
           not restricted to meeting with my therapist at a certain location and
@@ -194,10 +491,10 @@
           there are technical errors or sometimes static, I am still able to get
           the same quality and even better care by doing online therapy versus
           my experience doing face-to-face therapy.
-        </p>
+        </p2>
 
-        <h6 class="w3-left-align w3-padding-5">Works Cited</h6>
-        <p>
+        <h4 class="h4">Works Cited</h4>
+        <p3 class="p3">
           Matas, Alon. (2018). When BetterHelp found itself in a Youtube
           Controversy. Medium.Retrieved from:
           https://medium.com/@alonmatas/when-betterhelp-found-itself-in-a-youtube-controversy-3fd472229a4e
@@ -233,8 +530,59 @@
           face cognitive behavioural therapies in depressive disorders: A
           systematic review and meta-analysis. Eclinicalmedicine, 24, 100442.
           doi: 10.1016/j.eclinm.2020.100442
-        </p>
+        </p3>
+      </div>
+
+      <!---------Third Column----------->
+      <div class="content3">
+        <p style="font-weight: bold;">Author</p>
+        <p style="opacity: 50%;">Taylor Nyan </p>
+        <p style="opacity: 50%;">Last Updated:</p>
+        <p style="opacity: 50%;">5/31/2021</p>
+      </div>
+
+    </div>
+
+
+    <footer>
+      <div class="footer-main">
+      <div class= "footer1">
+        Want to advertise or collaborate?
+        <br />
+        For buisness inquiries: kaytayjenn@gmail.com
+      </div>
+      <div class="footer2">
+        <form action="/action_page.php">
+          <div class="container">
+            <h2 style="font-family: 'Nothing You Could Do', cursive; font-size:30px; color:  #173380; font-weight: bold;">Subscribe to stay updated!</h2>
+            <p>Get notified on the latest posts and giveaways every month</p>
+          </div>
+        
+          <div class="container">
+            <input type="text" placeholder="Name" name="name" required>
+            <input type="text" placeholder="Email address" name="mail" required>
+          </div>
+        
+          <div class="container">
+            <input type="submit" value="Subscribe">
+          </div>
+        </form>
       </div>
     </div>
+  
+      <div >
+        <a href="https://www.instagram.com/taylornyann/" class="text-lg hover:underline"><img class="inline-block"
+          width="40" width="40" src="logo-instagram.svg" /></a>
+        <a href="https://www.twitch.tv/taylornyann" class="text-lg hover:underline"><img class="inline-block" width="40"
+          width="40" src="logo-twitch.svg" /></a>
+        <a href="https://discord.gg/KPby77Y" class="text-lg hover:underline"><img class="inline-block" width="40"
+          width="40" src="logo-discord.svg" /></a>
+        <a href="https://twitter.com/TaylorNyann" class="text-lg hover:underline"><img class="inline-block" width="40"
+          width="40" src="logo-twitter.svg" /></a>
+        <a href="https://www.youtube.com/channel/UCcP05pAJZhrHwg_tzQcI1jQ" class="text-lg hover:underline"><img class="inline-block" width="40"
+          width="40" src="logo-youtube.svg" /></a>
+      </div>
+    </footer>
+  
   </body>
 </html>

@@ -57,9 +57,71 @@
      text-align: center;
     }
 
-    footer {
-      padding: 100px;
-    }
+    /* Footer */
+  * {
+  box-sizing: border-box;
+  }
+
+  footer {
+    padding-top: 30px;
+    padding-right: 100px;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    text-align: center;
+    width: 100%;
+    background-color: rgba(235, 223, 223, 0.507);
+  }
+
+  .footer-main {
+     display: flex;
+     vertical-align: top;
+     padding-right: 300px;
+     padding-bottom: 50px;
+     padding-left: 300px;
+  }
+
+  .footer1 {
+    flex: 50%;
+    text-align: center;
+    padding: 100px;
+    color: #173380;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .footer2 {
+    flex: 50%;
+    padding: 10px;
+  }
+
+  form {
+  border: 3px solid #f1f1f1;
+  font-family: 'Poppins', sans-serif;
+  }
+
+ .container {
+  padding: 5px;
+  }
+
+  input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  }
+
+  input[type=submit] {
+  background-color: #173380;
+  color: white;
+  border: none;
+  }
+
+   input[type=submit]:hover {
+  opacity: 0.8;
+  }
+
 
 
    .divider {
@@ -279,11 +341,15 @@
       <p class="p1">Welcome to my website!</p>
       <div class="top-social">
         <a href="https://www.instagram.com/taylornyann/" class="text-lg hover:underline"><img class="inline-block"
-            width="40" width="40" src="logo-instagram.svg" /></a>
+          width="40" width="40" src="logo-instagram.svg" /></a>
         <a href="https://www.twitch.tv/taylornyann" class="text-lg hover:underline"><img class="inline-block" width="40"
-            width="40" src="logo-twitch.svg" /></a>
+          width="40" src="logo-twitch.svg" /></a>
         <a href="https://discord.gg/KPby77Y" class="text-lg hover:underline"><img class="inline-block" width="40"
-            width="40" src="logo-discord.svg" /></a>
+          width="40" src="logo-discord.svg" /></a>
+        <a href="https://twitter.com/TaylorNyann" class="text-lg hover:underline"><img class="inline-block" width="40"
+          width="40" src="logo-twitter.svg" /></a>
+        <a href="https://www.youtube.com/channel/UCcP05pAJZhrHwg_tzQcI1jQ" class="text-lg hover:underline"><img class="inline-block" width="40"
+          width="40" src="logo-youtube.svg" /></a>
       </div>
     </header>
   
@@ -300,7 +366,7 @@
   <!------BLOG CONTENT---------->
    
     <div style="padding-right: 300px;
-                padding-bottom: 5px;
+                padding-bottom: 30px;
                 padding-left: 300px;
                 padding-top: 5px;">
         <div class="row">
@@ -330,20 +396,43 @@
   <!-- Footer -->
 
   <footer>
-    <div style="text-align: center;">
-      <a
-        href="https://www.instagram.com/taylornyann/"
-        class="text-lg hover:underline"
-        ><img class="inline-block" width="40" src="logo-instagram.svg"
-      /></a>
-      <a
-        href="https://www.twitch.tv/taylornyann"
-        class="text-lg hover:underline"
-        ><img class="inline-block" width="40" src="logo-twitch.svg"
-      /></a>
-      <a href="https://discord.gg/KPby77Y" class="text-lg hover:underline"
-        ><img class="inline-block" width="40" src="logo-discord.svg"
-      /></a>
+    <div class="footer-main">
+    <div class= "footer1">
+      Want to advertise or collaborate?
+      <br />
+      For buisness inquiries: kaytayjenn@gmail.com
+    </div>
+    <div class="footer2">
+      <form action="/action_page.php">
+        <div class="container">
+          <h2 style="font-family: 'Nothing You Could Do', cursive; font-size:30px; color:  #173380; font-weight: bold;">Subscribe to stay updated!</h2>
+          <p>Get notified on the latest posts and giveaways every month</p>
+        </div>
+      
+        <div class="container">
+          <input type="text" placeholder="Name" name="name" required>
+          <input type="text" placeholder="Email address" name="mail" required>
+        </div>
+      
+        <div class="container">
+          <input type="submit" value="Subscribe">
+        </div>
+      </form>
+    </div>
+  </div>
+
+    <div >
+      <a href="https://www.instagram.com/taylornyann/" class="text-lg hover:underline"><img class="inline-block"
+        width="40" width="40" src="logo-instagram.svg" /></a>
+      <a href="https://www.twitch.tv/taylornyann" class="text-lg hover:underline"><img class="inline-block" width="40"
+        width="40" src="logo-twitch.svg" /></a>
+      <a href="https://discord.gg/KPby77Y" class="text-lg hover:underline"><img class="inline-block" width="40"
+        width="40" src="logo-discord.svg" /></a>
+      <a href="https://twitter.com/TaylorNyann" class="text-lg hover:underline"><img class="inline-block" width="40"
+        width="40" src="logo-twitter.svg" /></a>
+      <a href="https://www.youtube.com/channel/UCcP05pAJZhrHwg_tzQcI1jQ" class="text-lg hover:underline"><img class="inline-block" width="40"
+        width="40" src="logo-youtube.svg" /></a>
     </div>
   </footer>
+
 </html>

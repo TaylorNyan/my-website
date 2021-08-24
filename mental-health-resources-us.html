@@ -21,6 +21,35 @@
 
 <style>
   
+  .main {
+     display: flex;
+     width: 85%;
+     vertical-align: top;
+     padding-right: 300px;
+     padding-bottom: 50px;
+     padding-left: 300px;
+   }
+
+  .content {
+   width: 70%;
+ 	 float: left;
+   padding-right: 50px;
+   padding-bottom: 50px;
+   padding-left: 50px;
+   padding-top: 50px;
+  }
+
+
+  .sidebar {
+ 	 width: 30%;
+ 	 float: right;
+   text-align: center;
+   padding-right: 70px;
+   padding-bottom: 50px;
+   padding-left: 70px;
+   padding-top: 50px;
+ 	 }
+
   footer {
     padding: 100px;
     text-align: center;
@@ -149,7 +178,34 @@
     right: 0;
   }
 
-  .header {
+
+  .button-jump {
+    border-radius: 4px;
+    background-color: #17338083;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    color: #000000;
+    text-align: center;
+    font-size: 15px;
+    padding: 15px;
+    width: 300px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    vertical-align: middle;
+    display: inline-block;
+    margin: 0;
+  }
+
+  .button-jump:hover {background-color: #17338083}
+
+  .button-jump:active {
+  background-color: rgba(62, 142, 65, 0.185)83;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+  }
+
+   .header {
     padding-right: 300px;
     padding-bottom: 5px;
     padding-left: 300px;
@@ -286,7 +342,6 @@
   height: 200px;
 }
 
-
 </style>
 
 <body class="bg-pink-200">
@@ -346,36 +401,60 @@
     <p class="p1">United States</p>
   </header>
 
+  <!-----Content----->
+
+  <div class="main">
+    <div class="content">
+    
   <!-----Crisis Phone Numbers----->
-    <div style="padding: 10px 16px;">
-        <h5>
+    <div style="padding: 10px 16px; background-color:rgba(235, 223, 223, 0.507);">
+        <h5 style="font-family: 'Nothing You Could Do', cursive; font-size: 30px; font-weight:bold;">
           Crisis Hotline Phone Numbers
         </h5>
 
-        <p>
-          SAMHSA’s National Helpline= 1-800-662-HELP (4357)
+        <p style= "font-family: 'Poppins', sans-serif; font-size: 18px;">
+          <b>SAMHSA’s National Helpline</b>: 1-800-662-HELP (4357)
           <br />
-          TTY (for deaf, hard of hearing, or speech-impaired)= 1-800-487-4889
+          <b>TTY (for deaf, hard of hearing, or speech-impaired)</b>: 1-800-487-4889
           <br />
-          National Suicide Prevention Lifeline: Call 1-800-273-TALK (8255); En
+          <b>National Suicide Prevention Lifeline</b>: Call 1-800-273-TALK (8255); En
           español 1-888-628-9454
           <br />
-          Crisis Text Line: Text “HELLO” to 741741
+          <b>Crisis Text Line</b>: Text “HELLO” to 741741
           <br />
-          Veterans Crisis Line: Call 1-800-273-TALK (8255) and press 1 or text
+          <b>Veterans Crisis Line</b>: Call 1-800-273-TALK (8255) and press 1 or text
           to 838255
           <br />
-          Disaster Distress Helpline: Call or text 1-800-985-5990
+          <b>Disaster Distress Helpline</b>: Call or text 1-800-985-5990
           <br />
-          NAMI HelpLine: 1-800-950-NAMI (6264) [Monday through Friday, 10 a.m.–8
+          <b>NAMI HelpLine</b>: 1-800-950-NAMI (6264) [Monday through Friday, 10 a.m.–8
           p.m., ET.]
           <br />
-          Emergency Line: 911
+          <b>Emergency Line</b>: 911
         </p>
     </div>
 
+  </div>
+    
+    <div class="sidebar">
+        Check out the latest mental health blog:
+    </div>
+  </div>
+
+<!----------------------------Jump To--------------------------------------->
+  <div style="padding-right:300px; padding-left: 300px; padding-bottom:50px;">
+    <h2 class="h2"> Jump to: </h2>
+    <button class="button-jump">
+      <a href="#Onlinecounseling" style="text-decoration: none;">Online Counseling Options</a>
+    </button> 
+
+    <button class="button-jump">
+      <a href="#Onlinesupport" style="text-decoration: none;">Online Support Options</a>
+    </button> 
+
+  </div>
     <!----------------------------Online Counseling---------------------------------------->
-    <div class="header">
+    <div class="header" id="Onlinecounseling">
       <h3 class="h3">
         Online Counseling
       </h3>
@@ -393,15 +472,20 @@
             <h2 class="h2">Is Online Therapy Right for You?</h2>
             <h6>What should I do?, <span style="opacity: 50%;">5/31/2021 (Last Updated)</span></h6>
 
-            <p> As moblie devices become our primary source of communication, 
+            <p style= "display: inline-block;"> 
+              
+              As moblie devices become our primary source of communication, 
               therapy has become more avalible to those that live far from counseling offices. 
               Though it has great potential to help, is it right for you?
             
+              <div style="padding-right: 10px; padding-left:10px; display: inline-block;">
+
                <button class="button-learn"> 
                  <a href="online-therapy.html" class="text-lg hover:underline">
                  <b>READ MORE »</b>
                  </button>
                  </a>
+              </div>
              </p>
                
         </div>
@@ -412,7 +496,7 @@
       </div>
 
     <!-- !PAGE CONTENT! -->
-    <div style="padding-right:200px; padding-left: 200px;">
+    <div style="padding-right:300px; padding-left: 300px; padding-bottom:50px;">
       <!-- First Grid-->
       <div class="row">
         <div class="column column1">
@@ -556,7 +640,7 @@
             Focus: Physical and Behavioral/Preventative Health
           </li>
             <li>
-            Effectiveness: YES
+            Accepts Insurace: YES
           </li>
              </ul>
           <a href="https://www.doctorondemand.com/" class="button-learn"
@@ -581,19 +665,45 @@
 
       <!--Is there a way to have it not refresh to a new page? also error in mental health resources -->
    
-      <!------------------- Mental Health Awareness
-    Resources---------------------->
+      <!------------------- Online Support Groups---------------------->
     
-    <div class="header">
+    <div class="header" id="Onlinesupport">
       <h3 class="h3">
-        Online Support Groups
+        Support Groups (In-person and online)
       </h3>
   
     </div>
-      <p>
-        Coming Soon!
-      </p>
 
+    <div style="padding-top:50px; padding-bottom: 50px; padding-right: 300px; padding-left: 300px; font-family: 'Poppins', sans-serif;">
+      <p>
+        <ul>
+          <li><b><a href="https://www.supportgroups.com/"> +SGSupportGroup</a> </a></b> lets people make anonymous posts looking for advice or support from others struggling with similar mental illness symptoms. </li>
+        <br />
+        <li><b><a href="https://www.nami.org/Find-Your-Local-NAMI/Affiliate/Programs?classkey=a1x36000003TN9TAAW"> NAMI Connection</a> </a></b> is a weekly recovery support group for people living with mental illness in which people learn from each others’ experiences, share coping strategies, and offer each other encouragement and understanding.</li>
+        <br />
+        <li><b><a href="https://www.nami.org/Find-Your-Local-NAMI/Affiliate/Programs?classkey=a1x36000003TN9LAAW"> NAMI Family Connection</a> </a></b>  free, confidential and safe groups of families helping other families who live with mental health challenges by utilizing their collective lived experiences and learned group wisdom. </li>
+        <br />
+        <li><b><a href="https://www.smartrecovery.org/"> Smart Recovery</a> </a></b> helps one another resolve problems with any addiction (to drugs or alcohol or to activities such as gambling or over-eating). Has both online and in-person meetings!</li>
+        <br />
+        <li><b><a href="https://www.griefshare.org/findagroup"> Grief Share</a> </a></b> has seminars and support groups that are led by people who understand what you are going through and want to help. They have free daily encouragement emails when you sign up as well to keep you motivated!</li>
+        <br />
+        <li><b><a href="https://www.dbsalliance.org/support/chapters-and-support-groups/online-support-groups/"> Depression and Bipolar Support Alliance</a> </a></b> give people living with depression and bipolar disorder a safe, welcoming place to share experiences, discuss coping skills, and offer each other hope.</li>
+        <br />
+        <li><b><a href="https://www.supportgroupscentral.com/index.cfm#anc2"> Support Groups Central</a> </a></b> provides various support group meetings varying from depression, parenting, weight management etc.</li>
+        <br />
+        <li><b><a href="https://healthunlocked.com/anxiety-depression-support"> Health Unlocked</a> </a></b> like SGSupportGroup, lets you post anonymously and discusses anxiety and depression to others who truly understand.</li>
+        <br />
+        <li><b><a href="https://www.postpartum.net/get-help/psi-online-support-meetings/"> Postpartum Support International</a> </a></b> supports parents and upcoming parents with multiple stresses and connects with others in similar situations such as military parents, NICU parents, etc.</li>
+        <br />
+        <li><b><a href="https://www.dailystrength.org/"> Daily Strength</a> </a></b> forums for those that want to share your experience and connect with those on the same path.</li>
+        <br />
+        <li><b><a href="https://www.7cups.com/"> 7 Cups</a> </a></b> not only provides therapy; they provide chat rooms for multiple situations along with volunteer listeners</li>
+        <br />
+      </ul>
+      </p>
+    </div>
     
   </body>
+
+  
 </html>
